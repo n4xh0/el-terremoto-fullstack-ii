@@ -1,0 +1,7 @@
+import { Link } from 'react-router';
+import { clp } from '../services/carrito.js';
+import { ResumenCarrito } from '../components/ResumenCarrito';
+export function PaginaCarrito({ items, onCambiar, onVaciar }) {
+    return <section className="wrap"><h1>Tu carrito</h1>{!items.length ? <div className="panel mt-4"><p>Tu carrito está vacío. Agrega productos desde la carta.</p><Link className="btn btn-primary" to="/carta">Ver la carta</Link></div> : <div className="row g-4 mt-2"><div className="col-lg-7"><div className="cart-list">{items.map(i => <div className="cart-row" key={i.id}><div><strong>{i.producto.nombre}</strong><small>{clp(i.precio)} c/u</small></div><div className="cart-qty"><button aria-label={`Disminuir ${i.producto.nombre}`} onClick={() => onCambiar(i.id, -1)}>−</button><span>{i.cantidad}</span><button aria-label={`Aumentar ${i.producto.nombre}`} disabled={i.cantidad >= 99} onClick={() => onCambiar(i.id, 1)}>+</button></div><div className="cart-price">{clp(i.precio * i.cantidad)}</div></div>)}</div><div className="d-flex gap-2 flex-wrap"><Link to="/carta" className="btn btn-ghost">Seguir comprando</Link><button className="btn btn-danger" onClick={() => { if (confirm('¿Quieres vaciar el carrito?'))
+        onVaciar(); }}>Vaciar carrito</button></div></div><div className="col-lg-5"><ResumenCarrito items={items}/><Link className="btn btn-primary w-100 mt-3" to="/checkout">Continuar al checkout</Link></div></div>}</section>;
+}

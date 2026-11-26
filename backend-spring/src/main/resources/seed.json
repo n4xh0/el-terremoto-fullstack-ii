@@ -1,0 +1,132 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Terremoto clásico",
+      "categoria": "Tragos",
+      "precio": 4890,
+      "desc": "Pipeño helado, granadina y helado de piña.",
+      "disponible": true,
+      "foto": "img/terremoto-clasico.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 2,
+      "nombre": "Terremoto de niños",
+      "categoria": "Tragos",
+      "precio": 2500,
+      "desc": "La versión sin alcohol: bebida de piña, granadina y helado de piña.",
+      "disponible": true,
+      "foto": "img/terremoto-nino.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 3,
+      "nombre": "Piscola",
+      "categoria": "Tragos",
+      "precio": 7890,
+      "desc": "Pisco con bebida cola, al gusto.",
+      "disponible": true,
+      "foto": "img/piscola.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 4,
+      "nombre": "Choripán",
+      "categoria": "Piqueos",
+      "precio": 13000,
+      "desc": "Chorizo a la parrilla en marraqueta, con chancho en piedra.",
+      "disponible": true,
+      "foto": "img/choripan.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 5,
+      "nombre": "Anticuchos",
+      "categoria": "Piqueos",
+      "precio": 15000,
+      "desc": "Brochetas de carne a la parrilla con verduras.",
+      "disponible": true,
+      "foto": "img/anticuchos.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 6,
+      "nombre": "Cerveza",
+      "categoria": "Bebidas frías",
+      "precio": 4000,
+      "desc": "Botella o schop, bien helada.",
+      "disponible": true,
+      "foto": "img/cerveza.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 7,
+      "nombre": "Completo",
+      "categoria": "Piqueos",
+      "precio": 2900,
+      "desc": "Vienesa con tomate, palta y mayonesa.",
+      "disponible": true,
+      "foto": "img/completo.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 8,
+      "nombre": "Empanadas",
+      "categoria": "Piqueos",
+      "precio": 5000,
+      "desc": "De pino, horneadas, con pebre picante.",
+      "disponible": true,
+      "foto": "img/empanadas.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 9,
+      "nombre": "Papas fritas",
+      "categoria": "Piqueos",
+      "precio": 3000,
+      "desc": "Con parmesano y una pizca de ketchup.",
+      "disponible": true,
+      "foto": "img/papas-fritas.jpg",
+      "descuento": 0
+    },
+    {
+      "id": 10,
+      "nombre": "chicha en cacho",
+      "categoria": "Tragos",
+      "precio": 5800,
+      "desc": "chiha en un cacho del kast.",
+      "disponible": true,
+      "foto": "img/image.png",
+      "descuento": 0
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Tragos"
+    },
+    {
+      "id": 2,
+      "nombre": "Piqueos"
+    },
+    {
+      "id": 3,
+      "nombre": "Bebidas frías"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "admin",
+      "nombre": "Administrador",
+      "rol": "admin"
+    },
+    {
+      "id": "cliente",
+      "nombre": "Cliente de prueba",
+      "rol": "cliente"
+    }
+  ],
+  "consultas": [],
+  "pedidos": []
+}

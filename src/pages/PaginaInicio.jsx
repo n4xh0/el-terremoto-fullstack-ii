@@ -1,0 +1,9 @@
+import { PaginaCarta } from './PaginaCarta';
+export function PaginaInicio({ productos, onAgregar }) {
+    return <>
+    <section className="hero"><div className="wrap hero-inner"><div><p className="hero-eyebrow">Duociocho de septiembre · Fondas y ramadas</p><h1>Un terremoto<br /><em>como se toma en Chile.</em></h1><p className="lede">Pipeño helado, un buen chorro de granadina y una bocha de helado de piña que se hunde despacito. Así empieza toda buena fonda.</p><div className="hero-actions"><a href="#carta" className="btn btn-primary">Ver la carta</a><a href="#receta" className="btn btn-ghost">Cómo se prepara</a></div></div><div className="hero-figure"><img src="/img/hero-terremoto.jpg" alt="Terremoto servido en vaso, con helado de piña y granadina"/><div className="caption"><span>Terremoto clásico</span><span>Pipeño · granadina · helado de piña</span></div></div></div></section>
+    <div id="ambiente"><img className="foto-ambiente" src="/img/ambiente-fonda.jpg" alt="Fonda dieciochera de noche, con banderas chilenas y gente celebrando"/></div>
+    <section id="receta"><div className="wrap"><div className="section-head"><div><h2>De dónde viene el terremoto</h2><p>Nació en un bar del centro de Santiago en los 80 y se volvió el trago oficial de septiembre.</p></div></div></div><div className="wrap receta"><div className="paso"><div className="num">01</div><h3>Pipeño bien frío</h3><p>Vino blanco joven y semi dulce, servido helado, hasta la mitad del vaso.</p></div><div className="paso"><div className="num">02</div><h3>Una bocha de piña</h3><p>Se hunde el helado y se deja flotar mientras se va derritiendo de a poco.</p></div><div className="paso"><div className="num">03</div><h3>Un chorro de granadina</h3><p>Al final, para que corra por los lados y le dé ese color de terremoto.</p></div></div></section>
+    <PaginaCarta productos={productos} onAgregar={onAgregar} incrustada/>
+  </>;
+}

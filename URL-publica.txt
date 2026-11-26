@@ -1,0 +1,4 @@
+URL pública de El Terremoto (AWS Learner Lab):
+http://el-terremoto-eva3-441558313469.s3-website-us-east-1.amazonaws.com/
+
+El laboratorio debe estar iniciado y la instancia EC2 en ejecución para que funcione la API.
